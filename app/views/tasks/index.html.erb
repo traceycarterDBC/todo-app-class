@@ -1,0 +1,18 @@
+<h1>All Tasks </h1>
+<p></p>
+<%= render 'tasks/form' %>
+<p></p>
+<table>
+	<tr>
+		<th>Task</th>
+		<th>Description</th>
+		<th colspan="2"></th>
+	</tr>
+		<% @tasks.each do |t| %>
+	<tr>
+		<td><%= t.title %></td>
+		<td><%= t.description %></td>
+	</tr>
+		<% end %>
+</table>
+
